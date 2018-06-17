@@ -3,7 +3,7 @@ pipeline{
      
     stages 
     {
-       stage ('Build')
+       stage ('Check-out and execute pythone script')
          {
            steps
            {
