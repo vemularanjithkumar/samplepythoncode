@@ -1,0 +1,42 @@
+pipeline{
+    agent any
+     
+    stages 
+    {
+       stage ('Build')
+         {
+           steps
+           {
+            checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs:             [[url:'https://github.com/vemularanjithkumar/samplepythoncode.git']]])
+      
+            bat 'python samplescript.py.txt'           
+
+           }
+         }
+       
+       stage ('Unit testing')
+         {
+           steps
+           {
+             echo " unit testing need to be implemented" 
+           }
+         }
+       
+      stage ('Integration testing')
+         {
+           steps
+           {
+             echo " Integrtion testing need to be implemented" 
+           }
+         }
+       
+       stage ('Deployment')
+         {
+           steps
+           {
+             echo " Deployen need to be implemented" 
+           }
+         }
+    }
+      
+}
