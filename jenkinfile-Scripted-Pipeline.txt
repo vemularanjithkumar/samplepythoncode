@@ -1,0 +1,34 @@
+node
+{
+
+   stage("Check-out and execute pythone script")
+   {
+     checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url:      'https://github.com/vemularanjithkumar/samplepythoncode.git']]])
+      
+     bat 'python samplescript.py.txt'
+
+    }
+  
+   stage("Unit testing")
+   {
+
+    echo "Unit testing need to be implemented"
+    
+    }   	
+
+    stage("Integration testing")
+    {
+
+     echo "Integration testing need to be implemented"
+    
+     }   	
+
+     stage("Deployment")
+     {
+
+      echo "Deployment need to be implemented"
+    
+      }
+}
+   	
+ 
