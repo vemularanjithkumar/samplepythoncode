@@ -14,21 +14,21 @@ node
 
     echo "Unit testing need to be implemented"
     
-    }   	
+   }   	
 
-    stage("Integration testing")
-    {
+   stage("Integration testing")
+   {
 
-     echo "Integration testing need to be implemented"
+    echo "Integration testing need to be implemented"
     
-     }   	
+   }   	
 
-     stage("Deployment")
-     {
+   stage("Deployment")
+   {
 
-      echo "Deployment need to be implemented"
+   echo "Deployment need to be implemented"
     
-      }
+    }
 }
    	
  
