@@ -1,1 +1,2 @@
-print(" Hello all this is a saample pythone application for testing")
+print(" Hello all this is a sample python application for testing")
+print(" Hello all execution completed")
